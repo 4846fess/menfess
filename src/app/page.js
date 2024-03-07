@@ -4,21 +4,21 @@ import { HOW_TO_SEND_VIA_TELEGRAM, MENFESS_RULES } from "@/utils/Constants";
 const Home = () => {
   return (
     <Layout>
-      <main className="flex min-h-screen flex-col items-center justify-between p-8">
+      <main className="flex min-h-screen flex-col items-center justify-between p-4 md:p-8">
         <div className="w-full flex flex-center items-center flex-col relative">
           <img
             src="/assets/icons/banner.svg"
             alt="@4846menfess logo"
-            className="rounded-lg w-11/12 md:w-9/12 mb-5"
+            className="rounded-lg w-full md:w-9/12 mb-5"
           />
         
-          <div className="flex flex-col text-center absolute bottom-10">
-            <h1 className="text-3xl font-semibold text-slate-950">Welcome!</h1>
-            <span className="text-slate-950">48 & 46 Groups Fans Autobase based in Indonesia🇮🇩</span>
+          <div className="flex flex-col text-center absolute p-2 bottom-5 md:bottom-10">
+            <h1 className="font-semibold text-slate-950 text-md md:text-3xl">Welcome!</h1>
+            <span className="text-slate-950 text-xs md:text-base">48 & 46 Groups Fans Autobase based in Indonesia🇮🇩</span>
           </div>
         </div>
 
-        <div className="w-11/12 md:w-9/12 p-10">
+        <div className="w-full p-5 md:w-9/12 p-10">
           <span className="font-semibold">Rules</span>
           <ul className="list-decimal text-slate-50 text-sm dark:text-slate-950 ps-3">
             {MENFESS_RULES.map((item, index) => (
@@ -50,7 +50,7 @@ const Home = () => {
           />
         </div>
 
-        <div>
+        <div className="text-center">
           <span className="text-slate-50 text-sm dark:text-slate-950">If you have any complaints, feel free to contact <a href="https://twitter.com/4846fess2" target="_blank" rel="noopener noreferrer" className="font-semibold">@4846fess2</a> via mention/DM</span>
         </div>
       </main>
