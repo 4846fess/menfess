@@ -25,7 +25,7 @@ const NavbarMenus = () => {
         {MENUS.map((item, index) => (
           <button
             key={index}
-            className={`${pathname === item?.url ? 'bg-[#D37676]' : 'bg-[#f1ef99]'} px-4 py-2 rounded-full transition ease-in-out text-slate-900 hover:bg-[#D37676]`}
+            className={`${pathname === item?.url ? 'bg-[#D37676]' : 'bg-[#f1ef99]'} px-10 py-2 rounded-full transition ease-in-out text-slate-900 hover:bg-[#D37676]`}
             onClick={() => handleClick(item?.url)}
           >
             <span>{item?.name}</span>
@@ -47,12 +47,14 @@ const NavbarMenus = () => {
               {MENUS?.map((item, key) => (
                 <button
                   key={key}
-                  className={`${pathname === item?.url ? 'bg-[#D37676]' : 'bg-[#f1ef99]'} px-4 py-2 transition ease-in-out text-slate-900 hover:bg-[#D37676]`}
+                  className={`${pathname === item?.url ? 'bg-[#D37676]' : 'bg-[#f1ef99]'} px-10 py-2 transition ease-in-out text-slate-900 hover:bg-[#D37676]`}
                   onClick={() => handleClick(item?.url)}
                 >
                   <span>{item?.name}</span>
                 </button>
               ))}
+
+              <TwitterButton />
             </div>
         </BottomSheet>
       </div>

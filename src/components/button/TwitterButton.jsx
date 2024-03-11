@@ -9,11 +9,11 @@ const TwitterButton = () => {
 
   return (
     <button
-      className="flex justify-between items-center px-4 py-2 rounded-full shadow transition ease-in-out bg-[#f1ef99] text-slate-900 hover:bg-[#D37676]"
+      className="flex justify-center items-center px-10 py-2 transition ease-in-out bg-[#f1ef99] text-slate-900 hover:bg-[#D37676]"
       onClick={handleClick}
     >
       <AiOutlineTwitter />
-      <span className="ps-2 hidden md:block">Twitter</span>
+      <span className="ps-2">Twitter</span>
     </button>
   );
 };
