@@ -4,16 +4,10 @@ import Layout from "@/components/layout/Layout";
 import { MENFESS_RULES } from "@/utils/Constants";
 
 const Rules = () => {
-  const getContainerWidth = () => {
-    const el = document.getElementById('container');
-    return { w: el?.clientWidth ?? 0, h: el?.clientHeight ?? 0 };
-  };
-
   return (
     <Layout>
       <main className="flex min-h-dvh items-center justify-center bg-[#D37676]">
         <div className="relative">
-          <div className="bg-[#dbba3a] absolute" style={{ width: getContainerWidth().w, height: getContainerWidth().h, right: -24, bottom: -24 }} />
           <div id="container" className="bg-[#f1ef99] p-10">
             <div className="text-center mb-5">
               <span className="text-[#D37676] font-bold text-5xl tracking-widest">RULES</span>
