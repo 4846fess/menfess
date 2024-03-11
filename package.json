@@ -1,5 +1,5 @@
 {
-  "name": "menfess",
+  "name": "4846fess",
   "version": "0.1.0",
   "private": true,
   "author": "zakydayo",
@@ -10,11 +10,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "hamburger-react": "^2.5.0",
     "next": "14.1.3",
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.0.1"
+    "react-icons": "^5.0.1",
+    "react-spring-bottom-sheet": "^3.4.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
