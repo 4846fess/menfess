@@ -54,3 +54,10 @@ export const DEFAULT_COLORS = {
   'merah-lembut': '#D37676',
   'ijo-lumut': '#b0c5a4'
 };
+
+export const ALLOWED_GROUPS = [
+  '/assets/images/48-circle.png',
+  '/assets/images/nogi-logo.png',
+  '/assets/images/hinata-logo.png',
+  '/assets/images/sakurazaka-logo.png',
+]
