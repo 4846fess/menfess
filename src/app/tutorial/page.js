@@ -1,7 +1,17 @@
+'use client';
+
 import Layout from "@/components/layout/Layout";
 import { HOW_TO_SEND_VIA_TELEGRAM } from "@/utils/Constants";
+import Script from "next/script";
+import { useEffect, useState } from "react";
 
 const Tutorial = () => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, [])
+
   return (
     <Layout>
       <main className="flex min-h-dvh items-center justify-center bg-[#f1ef99]">
@@ -15,17 +25,13 @@ const Tutorial = () => {
             </ul>
           </div>
 
-          <div
-            dangerouslySetInnerHTML={{
-              __html: `
-                <blockquote class="twitter-tweet">
-                  <p lang="in" dir="ltr">Allo akak! 👋<br><br>Berikut adalah video tutorial untuk mengirim menfess terbaru via Telegram.<br><br>Boleh ditonton ya!<br><br>Terima kasih 🤖🙏 <a href="https://t.co/YNFrZGXdtF">pic.twitter.com/YNFrZGXdtF</a></p>
-                  &mdash; Suvpen Zu 🚀🟣 (@suvpen) <a href="https://twitter.com/suvpen/status/1676368886869139456?ref_src=twsrc%5Etfw">July 4, 2023</a>
-                </blockquote>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              `,
-            }}
-          />
+          <div>
+            <blockquote className="twitter-tweet">
+              <p lang="in" dir="ltr">Allo akak! 👋<br /><br />Berikut adalah video tutorial untuk mengirim menfess terbaru via Telegram.<br /><br />Boleh ditonton ya!<br /><br />Terima kasih 🤖🙏 <a href="https://t.co/YNFrZGXdtF">pic.twitter.com/YNFrZGXdtF</a></p>
+              &mdash; Suvpen Zu 🚀🟣 (@suvpen) <a href="https://twitter.com/suvpen/status/1676368886869139456?ref_src=twsrc%5Etfw">July 4, 2023</a>
+            </blockquote>
+            <Script src="https://platform.twitter.com/widgets.js" strategy="lazyOnload" />
+          </div>
         </div>
       </main>
     </Layout>

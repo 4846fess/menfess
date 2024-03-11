@@ -15,7 +15,8 @@ const NavbarMenus = () => {
 
   const handleToggle = () => setToggle(!toggle);
 
-  const handleClick = (url) => { 
+  const handleClick = (e, url) => { 
+    e.preventDefault();
     router.push(url);
   };
 
@@ -26,7 +27,7 @@ const NavbarMenus = () => {
           <button
             key={index}
             className={`${pathname === item?.url ? 'bg-[#D37676]' : 'bg-[#f1ef99]'} px-10 py-2 rounded-full transition ease-in-out text-slate-900 hover:bg-[#D37676]`}
-            onClick={() => handleClick(item?.url)}
+            onClick={(e) => handleClick(e, item?.url)}
           >
             <span>{item?.name}</span>
           </button>
@@ -48,7 +49,7 @@ const NavbarMenus = () => {
                 <button
                   key={key}
                   className={`${pathname === item?.url ? 'bg-[#D37676]' : 'bg-[#f1ef99]'} px-10 py-2 transition ease-in-out text-slate-900 hover:bg-[#D37676]`}
-                  onClick={() => handleClick(item?.url)}
+                  onClick={(e) => handleClick(e, item?.url)}
                 >
                   <span>{item?.name}</span>
                 </button>
