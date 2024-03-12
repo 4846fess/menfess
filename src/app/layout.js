@@ -2,7 +2,7 @@ import { Poppins } from "next/font/google";
 import "@/styles/globals.scss";
 import ThemeSwitch from "@/components/custom-provider/ThemeSwitch";
 import ogImage from './opengraph-image.png';
-import twImage from '.twitter-image.png';
+import twImage from './twitter-image.png';
 
 const inter = Poppins({ subsets: ["latin"], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 
