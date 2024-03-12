@@ -43,6 +43,7 @@ const Layout = (props) => {
         <meta name="twitter:title" content={metaTitle} />
         <meta name="twitter:description" content={metaDescription} />
         <meta name="twitter:image" content={metaImage} />
+        <meta name="twitter:creator" content="@4846fess" />
 
         <meta name="application-name" content="4846Fess" />
         <meta name="description" content={metaDescription} />

@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import "@/styles/globals.scss";
 import ThemeSwitch from "@/components/custom-provider/ThemeSwitch";
 import ogImage from './opengraph-image.png';
+import twImage from '.twitter-image.png';
 
 const inter = Poppins({ subsets: ["latin"], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 
@@ -10,23 +11,12 @@ export const metadata = {
   description: '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩',
   image: '/assets/images/logo.png',
   twitter: {
-    card: [
-      {
-        url: ogImage.src,
-        width: ogImage.width,
-        height: ogImage.height
-      }
-    ],
+    card: 'summary',
     site: '@4846fess',
     title: 'Home | 4846Fess',
     description: '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩',
-    image:[
-      {
-        url: ogImage.src,
-        width: ogImage.width,
-        height: ogImage.height
-      }
-    ],
+    image: twImage,
+    creator: '@4846fess'
   },
   icons: {
     icon: [
