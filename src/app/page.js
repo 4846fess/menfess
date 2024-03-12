@@ -13,7 +13,7 @@ const Home = () => {
           />
 
           <h1 className="font-semibold text-slate-950 text-md md:text-3xl">Welcome!</h1>
-          <span className="text-slate-950 text-xs md:text-base">48 & 46 Groups Fans Autobase based in Indonesia🇮🇩</span>
+          <span className="text-slate-950 text-xs md:text-base">4846GROUPS Fans Autobase based in Indonesia</span>
         </div>
       </main>
     </Layout>
