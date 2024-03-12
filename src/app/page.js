@@ -1,11 +1,10 @@
 import Layout from "@/components/layout/Layout";
-import { HOW_TO_SEND_VIA_TELEGRAM, MENFESS_RULES } from "@/utils/Constants";
 
 const Home = () => {
   return (
     <Layout>
       <main className="flex min-h-dvh items-center justify-center bg-[#f1ef99]">
-        <div className="border border-8 border-[#D37676] p-5 flex items-center justify-center flex-col">
+        <div className="border border-8 border-[#D37676] px-10 py-8 flex items-center justify-center flex-col">
           <img
             src="/assets/images/logo-transparent.png"
             alt="@4846menfess logo"

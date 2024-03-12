@@ -1,5 +1,31 @@
 import Layout from "@/components/layout/Layout";
 
+export const metadata = {
+  title: 'About | 4846Fess',
+  description: '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩',
+  image: '/assets/images/logo.png',
+  twitter: {
+    card: '/assets/images/banner.png',
+    site: '@4846fess',
+    title: 'About | 4846Fess',
+    description: '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩',
+    image: '/assets/images/logo.png',
+  },
+  icons: {
+    icon: [
+      {
+        url: '/assets/favicon/favicon.ico',
+        href: '/assets/favicon/favicon.ico',
+      },
+    ],
+  },
+  openGraph: {
+    title: 'About | 4846Fess',
+    description: "48 & 46 Groups Fans Autobase based in Indonesia🇮🇩",
+    image: '/assets/images/logo.png',
+  },
+};
+
 const About = () => {
   return (
     <Layout>

@@ -61,3 +61,29 @@ export const ALLOWED_GROUPS = [
   '/assets/images/hinata-logo.png',
   '/assets/images/sakurazaka-logo.png',
 ]
+
+export let DEFAULT_METADATA = {
+  title: "4846Fess",
+  description: "48 & 46 Groups Fans Autobase based in Indonesia🇮🇩",
+  image: '/assets/images/logo.png',
+  twitter: {
+    card: '/assets/images/banner.png',
+    site: '@4846fess',
+    title: '4846Fess',
+    description: '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩',
+    image: '/assets/images/logo.png',
+  },
+  icons: {
+    icon: [
+      {
+        url: '/assets/favicon/favicon.ico',
+        href: '/assets/favicon/favicon.ico',
+      },
+    ],
+  },
+  openGraph: {
+    title: "4846Fess",
+    description: "48 & 46 Groups Fans Autobase based in Indonesia🇮🇩",
+    image: '/assets/images/logo.png',
+  },
+};

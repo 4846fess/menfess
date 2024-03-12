@@ -26,7 +26,7 @@ const NavbarMenus = () => {
         {MENUS.map((item, index) => (
           <button
             key={index}
-            className={`${pathname === item?.url ? 'bg-[#D37676]' : 'bg-[#f1ef99]'} px-10 py-2 rounded-full transition ease-in-out text-slate-900 hover:bg-[#D37676]`}
+            className={`${pathname === item?.url ? 'bg-[#D37676]' : 'bg-[#f1ef99]'} px-10 py-2 rounded-full font-semibold transition ease-in-out text-slate-900 hover:bg-[#D37676]`}
             onClick={(e) => handleClick(e, item?.url)}
           >
             <span>{item?.name}</span>

@@ -1,7 +1,31 @@
-'use client';
-
 import Layout from "@/components/layout/Layout";
 import { ALLOWED_GROUPS, MENFESS_RULES } from "@/utils/Constants";
+
+export const metadata = {
+  title: 'Rules | 4846Fess',
+  description: '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩',
+  image: '/assets/images/logo.png',
+  twitter: {
+    card: '/assets/images/banner.png',
+    site: '@4846fess',
+    title: 'Rules | 4846Fess',
+    description: '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩',
+    image: '/assets/images/logo.png',
+  },
+  icons: {
+    icon: [
+      {
+        url: '/assets/favicon/favicon.ico',
+        href: '/assets/favicon/favicon.ico',
+      },
+    ],
+  },
+  openGraph: {
+    title: 'Rules | 4846Fess',
+    description: "48 & 46 Groups Fans Autobase based in Indonesia🇮🇩",
+    image: '/assets/images/logo.png',
+  },
+};
 
 const Rules = () => {
   return (
