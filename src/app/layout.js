@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import "@/styles/globals.scss";
 import ThemeSwitch from "@/components/custom-provider/ThemeSwitch";
+import ogImage from './opengraph-image.png';
 
 const inter = Poppins({ subsets: ["latin"], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 
@@ -13,7 +14,13 @@ export const metadata = {
     site: '@4846fess',
     title: 'Home | 4846Fess',
     description: '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩',
-    image: '/assets/images/logo.png',
+    image:[
+      {
+        url: ogImage.src,
+        width: ogImage.width,
+        height: ogImage.height
+      }
+    ],
   },
   icons: {
     icon: [
@@ -26,7 +33,13 @@ export const metadata = {
   openGraph: {
     title: 'Home | 4846Fess',
     description: "48 & 46 Groups Fans Autobase based in Indonesia🇮🇩",
-    image: 'https://drive.google.com/file/d/16iph6NV5sTWj_raarFdOT1TJoaa82fQg/view',
+    image:[
+      {
+        url: ogImage.src,
+        width: ogImage.width,
+        height: ogImage.height
+      }
+    ],
   },
 };
 
