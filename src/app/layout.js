@@ -10,7 +10,13 @@ export const metadata = {
   description: '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩',
   image: '/assets/images/logo.png',
   twitter: {
-    card: '/assets/images/banner.png',
+    card: [
+      {
+        url: ogImage.src,
+        width: ogImage.width,
+        height: ogImage.height
+      }
+    ],
     site: '@4846fess',
     title: 'Home | 4846Fess',
     description: '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩',
