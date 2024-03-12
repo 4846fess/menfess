@@ -29,27 +29,20 @@ const Layout = (props) => {
 
         <link rel="manifest" href="/manifest.json" />
 
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:url" content="https://www.4846fess.site/" />
-        <meta name="twitter:image" content={metaImage} />
-        <meta name="twitter:image:alt" content="4846Fess | 48 & 46 Groups Fans Autobase based in Indonesia🇮🇩" />
-        <meta name="twitter:image:type" content="image/png" />
-        <meta name="twitter:image:width" content="1500" />
-        <meta name="twitter:image:height" content="500" />
-        <meta name="twitter:title" content={metaTitle} />
-        <meta name="twitter:description" content={metaDescription} />
-        <meta name="twitter:creator" content="@4846fess" />
+        <title>{metaTitle}</title>
 
+        <meta property="og:url" content="https://www.4846fess.site/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={metaImage} />
-        <meta property="og:image:alt" content="4846Fess | 48 & 46 Groups Fans Autobase based in Indonesia🇮🇩" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1500" />
-        <meta property="og:image:height" content="500" />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:site_name" content="4846Fess" />
-        <meta property="og:url" content="https://www.4846fess.site/" />
+        <meta property="og:image" content="https://opengraph.b-cdn.net/production/documents/59f0c797-22fe-4c59-8bad-55aa7f02f2f7.png?token=HzlzStJEz2cHRxSrY3W0loz3HYNE8Oy45nRhmfwWLRM&height=1080&width=1080&expires=33246249604" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="4846fess.site" />
+        <meta property="twitter:url" content="https://www.4846fess.site/" />
+        <meta name="twitter:title" content={metaTitle} />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/documents/59f0c797-22fe-4c59-8bad-55aa7f02f2f7.png?token=HzlzStJEz2cHRxSrY3W0loz3HYNE8Oy45nRhmfwWLRM&height=1080&width=1080&expires=33246249604" />
 
         <meta name="application-name" content="4846Fess" />
         <meta name="description" content={metaDescription} />

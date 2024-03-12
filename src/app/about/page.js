@@ -21,14 +21,18 @@ export const metadata = {
   },
   openGraph: {
     title: 'About | 4846Fess',
-    description: "48 & 46 Groups Fans Autobase based in Indonesia🇮🇩",
+    description: '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩',
     images: '/assets/images/logo.png',
   },
 };
 
 const About = () => {
   return (
-    <Layout>
+    <Layout
+      title='About | 4846Fess'
+      description='48 & 46 Groups Fans Autobase based in Indonesia🇮🇩'
+      images='/assets/images/logo.png'
+    >
       <main className="flex min-h-dvh items-center justify-center bg-[#b0c5a4]">
         <div className="flex flex-col md:flex-row w-full md:w-11/12">
           <img

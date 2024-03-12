@@ -22,14 +22,18 @@ export const metadata = {
   },
   openGraph: {
     title: 'Rules | 4846Fess',
-    description: "48 & 46 Groups Fans Autobase based in Indonesia🇮🇩",
+    description: '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩',
     images: '/assets/images/logo.png',
   },
 };
 
 const Rules = () => {
   return (
-    <Layout>
+    <Layout
+      title='Rules | 4846Fess'
+      description='48 & 46 Groups Fans Autobase based in Indonesia🇮🇩'
+      images='/assets/images/logo.png'
+    >
       <main className="flex flex-col min-h-dvh items-center justify-center bg-[#D37676] py-10">
         <div className="relative">
           <div id="container" className="bg-[#f1ef99] p-10">
