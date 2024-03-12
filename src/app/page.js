@@ -2,7 +2,11 @@ import Layout from "@/components/layout/Layout";
 
 const Home = () => {
   return (
-    <Layout>
+    <Layout
+      title="Home"
+      description="48 & 46 Groups Fans Autobase based in Indonesia🇮🇩"
+      image="/assets/images/banner.png"
+    >
       <main className="flex min-h-dvh items-center justify-center bg-[#f1ef99]">
         <div className="border border-8 border-[#D37676] px-10 py-8 flex items-center justify-center flex-col">
           <img

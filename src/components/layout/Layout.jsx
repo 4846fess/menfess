@@ -9,9 +9,9 @@ const defaultImage = '/assets/images/banner.png';
 const Layout = (props) => {
   const { children, title, description, image } = props;
 
-  const metaTitle = title ?? defaulTitle;
-  const metaDescription = description ?? defaultDesc;
-  const metaImage = image ?? defaultImage;
+  const metaTitle = title !== null ? title : defaulTitle;
+  const metaDescription = description !== null ? description : defaultDesc;
+  const metaImage = image !== null ? image : defaultImage;
 
   return (
     <>
