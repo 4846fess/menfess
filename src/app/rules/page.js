@@ -1,16 +1,19 @@
 import Layout from "@/components/layout/Layout";
 import { ALLOWED_GROUPS, MENFESS_RULES } from "@/utils/Constants";
+import ogImage from '../opengraph-image.png';
+import twImage from '../twitter-image.png';
 
 export const metadata = {
   title: 'Rules | 4846Fess',
   description: '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩',
   image: '/assets/images/logo.png',
   twitter: {
-    card: '/assets/images/banner.png',
+    card: 'summary',
     site: '@4846fess',
     title: 'Rules | 4846Fess',
     description: '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩',
-    image: '/assets/images/logo.png',
+    image: twImage,
+    creator: '@4846fess'
   },
   icons: {
     icon: [
@@ -23,7 +26,13 @@ export const metadata = {
   openGraph: {
     title: 'Rules | 4846Fess',
     description: '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩',
-    image: 'https://drive.google.com/file/d/16iph6NV5sTWj_raarFdOT1TJoaa82fQg/view',
+    image:[
+      {
+        url: ogImage.src,
+        width: ogImage.width,
+        height: ogImage.height
+      }
+    ],
   },
 };
 
