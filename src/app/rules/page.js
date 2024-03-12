@@ -64,7 +64,7 @@ const Rules = () => {
 
           <div className="gap-10 flex flex-col bg-slate-50 p-10 md:flex-row justify-center w-fit">
             {ALLOWED_GROUPS.map((item, index) => (
-              <img src={item} key={index} className="w-full md:w-1/6" alt="" />
+              <img src={item} key={index} className="w-full md:w-1/6" alt="" loading="lazy" />
             ))}
           </div>
 

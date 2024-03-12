@@ -26,7 +26,7 @@ export const metadata = {
   openGraph: {
     title: 'Home | 4846Fess',
     description: "48 & 46 Groups Fans Autobase based in Indonesia🇮🇩",
-    image: '/assets/images/logo.png',
+    images: '/assets/images/logo.png',
   },
 };
 
