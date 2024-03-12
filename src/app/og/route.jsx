@@ -5,7 +5,7 @@ import { ImageResponse } from 'next/og';
 export const runtime = 'edge';
  
 export async function GET() {
-  const imageData = await fetch(new URL('/assets/images/banner.png', import.meta.url)).then(
+  const imageData = await fetch(new URL('../opengraph-image.png', import.meta.url)).then(
     (res) => res.arrayBuffer(),
   );
   return new ImageResponse(
