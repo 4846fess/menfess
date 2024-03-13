@@ -1,6 +1,6 @@
 'use client';
 
-import { AiOutlineTwitter } from "react-icons/ai";
+import { BsTwitterX } from "react-icons/bs";
 
 const TwitterButton = () => {
   const handleClick = () => {
@@ -12,8 +12,7 @@ const TwitterButton = () => {
       className="flex justify-center items-center font-semibold px-10 py-2 transition ease-in-out bg-[#f1ef99] text-slate-900 hover:bg-[#D37676] md:rounded-full"
       onClick={handleClick}
     >
-      <AiOutlineTwitter />
-      <span className="ps-2">Twitter</span>
+      <BsTwitterX />
     </button>
   );
 };
