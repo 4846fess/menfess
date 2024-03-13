@@ -47,7 +47,7 @@ const Tutorial = () => {
       <main className="flex min-h-dvh items-center justify-center bg-[#f1ef99]">
         <div className="columns-1 w-full p-3 md:columns-2 gap-3 max-w-5xl lg:w-11/12 max-w-none">
           <div className="md:flex justify-end">
-            <div className="bg-slate-50 p-5">
+            <div className="bg-[#fff9f3] p-5 tutorial-step">
               <span className="font-bold tracking-widest text-[#D37676] text-3xl lg:text-5xl">TUTORIAL MENGIRIM MENFESS VIA TELEGRAM</span>
               <ul className="list-decimal text-sm text-slate-950 ps-3 mt-3 font-semibold">
                 {HOW_TO_SEND_VIA_TELEGRAM.map((item, index) => (
