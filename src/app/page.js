@@ -16,10 +16,10 @@ const Home = () => {
             loading="lazy"
           />
 
-          <h1 className="font-semibold text-slate-950 text-4xl md:text-3xl">Welcome!</h1>
-          <span className="text-slate-950 text-base flex flex-col text-center items-center md:flex-row">
+          <h1 className="font-semibold text-slate-950 text-4xl md:text-5xl">Welcome!</h1>
+          <span className="text-slate-950 text-base flex flex-col text-center items-center md:text-2xl md:flex-row">
             4846GROUPS Fans Autobase based in Indonesia
-            <img src="/assets/icons/id.svg" alt="" width={16} loading="lazy" className="ml-1" />
+            <img src="/assets/icons/id.svg" alt="" width={18} loading="lazy" className="ml-1" />
           </span>
         </div>
       </main>
