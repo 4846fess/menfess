@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import TrakteerQRButton from "../button/TrakteerQRButton";
 
 const defaulTitle = '4846Fess';
 const defaultDesc = '48 & 46 Groups Fans Autobase based in Indonesia🇮🇩';
@@ -50,9 +51,13 @@ const Layout = (props) => {
 
         <title>{metaTitle}</title>
       </Head>
-      <Navbar />
-      {children}
-      <Footer />
+
+      <div transition-style="in:wipe:down">
+        <Navbar />
+        {children}
+        <TrakteerQRButton />
+        <Footer />
+      </div>
     </>
   );
 };
